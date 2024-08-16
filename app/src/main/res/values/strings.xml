@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DBDemo</string>
+    <string name="fn">FULL NAME</string>
+    <string name="present">Present</string>
+    <string name="absent">Absent</string>
+    <string name="seldate">SELECT DATE</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFFICE ATTENDANCE"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/fn"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textview"/>
+
+    <EditText
+            android:id="@+id/date"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/fname"
+            android:inputType="date"
+            android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/status1"
+        android:text="Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/date"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"/>
+    <RadioGroup
+        android:id="@+id/rgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status1"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+             android:id="@+id/present"
+             android:layout_width="wrap_content"
+             android:textStyle="bold"
+             android:padding="10dp"
+             android:layout_height="wrap_content"
+             android:text="@string/present" />
+        <RadioButton
+             android:id="@+id/absent"
+             android:textStyle="bold"
+             android:padding="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/absent" />
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/llay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@id/rgroup"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"
+            android:paddingRight="10dp"
+            android:layout_toRightOf="@id/submit"
+            android:layout_marginLeft="30dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="SHOW REPORT"
+        android:layout_below="@id/llay1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
